@@ -35,6 +35,18 @@ repositories {
 	mavenCentral()
 }
 
+publishing {
+    repositories {
+        maven {
+            url 'http://localhost:8081/repository/maven-snapshots/'
+            credentials {
+                username = 'admin'
+                password = 'admin123'
+            }
+        }
+    }
+}
+
 dependencyManagement {
 	imports {
 		mavenBom "org.springframework.cloud:spring-cloud-contract-dependencies:${verifier_version}"

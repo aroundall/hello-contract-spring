@@ -7,7 +7,8 @@ org.springframework.cloud.contract.spec.Contract.make {
         status 200
         body("""
             {
-                "id": 2
+                "id": 2,
+                "name": "Dummy Product"
             }
         """)
     }

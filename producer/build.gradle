@@ -64,5 +64,5 @@ dependencies {
 }
 
 contracts {
-	baseClassForTests = 'org.amuji.product.MvcTest'
+	packageWithBaseClasses = 'org.amuji'
 }

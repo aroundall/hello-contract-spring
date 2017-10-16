@@ -41,8 +41,8 @@ import org.springframework.cloud.contract.spec.Contract
                         minOccurrence(1)
                         maxOccurrence(20)
                     })
-//                    jsonPath('$[1].id', byRegex('\\d+'))
-//                    jsonPath('$[1].name', byRegex('.+'))
+                    jsonPath('$.content[1].id', byRegex('\\d+'))
+                    jsonPath('$.content[1].name', byRegex('.+'))
                 }
             }
         }

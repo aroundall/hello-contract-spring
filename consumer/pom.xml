@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>org.amuji</groupId>
-	<artifactId>hello-contract-spring-producer</artifactId>
+	<artifactId>hello-contract-spring-consumer</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>hello-contract-spring-producer</name>
+	<name>hello-contract-spring-consumer</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
@@ -32,7 +32,19 @@
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-contract-verifier</artifactId>
+			<artifactId>spring-cloud-contract-wiremock</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-contract-stub-runner</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.amuji</groupId>
+			<artifactId>hello-contract-spring-producer</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+			<classifier>stubs</classifier>
 			<scope>test</scope>
 		</dependency>
 	</dependencies>

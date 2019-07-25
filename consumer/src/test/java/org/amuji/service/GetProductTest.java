@@ -1,6 +1,5 @@
 package org.amuji.service;
 
-import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,7 +7,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.cloud.contract.stubrunner.spring.AutoConfigureStubRunner;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertNotNull;
 
 /**
  * Xiangrong Yang
@@ -16,7 +15,7 @@ import static org.junit.Assert.*;
  */
 @RunWith(SpringRunner.class)
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.NONE)
-@AutoConfigureStubRunner(ids = {"org.amuji:http-server-producer:+:stubs:6565"}, repositoryRoot = "http://localhost:8081/repository/maven-snapshots/")
+@AutoConfigureStubRunner(ids = {"org.amuji:hello-contract-spring-producer:+:stubs:6565"}, workOffline = true)
 public class GetProductTest {
 
     @Autowired

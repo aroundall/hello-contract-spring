@@ -1,9 +1,8 @@
 package org.amuji;
 
-import com.jayway.restassured.module.mockmvc.RestAssuredMockMvc;
+import io.restassured.module.mockmvc.RestAssuredMockMvc;
 import org.amuji.product.Application;
 import org.amuji.product.Product;
-import org.amuji.product.ProductController;
 import org.amuji.product.ProductRepo;
 import org.junit.Before;
 import org.junit.Ignore;
@@ -12,7 +11,6 @@ import org.mockito.BDDMockito;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
-import org.springframework.test.annotation.DirtiesContext;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.web.context.WebApplicationContext;
 

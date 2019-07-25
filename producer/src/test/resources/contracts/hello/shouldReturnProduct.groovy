@@ -4,7 +4,7 @@ import org.springframework.cloud.contract.spec.Contract
 
 [
         Contract.make {
-            name('Should get a product.')
+            name('should get a product.')
             request {
                 method GET()
                 url '/products/2'

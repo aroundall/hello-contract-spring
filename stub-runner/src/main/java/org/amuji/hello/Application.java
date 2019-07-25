@@ -6,7 +6,6 @@ import org.springframework.cloud.contract.stubrunner.server.EnableStubRunnerServ
 
 @SpringBootApplication
 @EnableStubRunnerServer
-//@AutoConfigureStubRunner(ids = "org.amuji:http-server-producer:+:stubs:8095", workOffline = false)
 public class Application {
 
 	public static void main(String[] args) {

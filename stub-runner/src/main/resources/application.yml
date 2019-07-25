@@ -1,0 +1,6 @@
+#stubrunner.work-offline=false
+stubrunner:
+  work-offline: true
+  ids: org.amuji:hello-contract-spring-producer:+:stubs:8095
+server:
+  port: 0
